@@ -1,0 +1,66 @@
+---
+const pageTitle = "Zukuan";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <meta
+      name="description"
+      content="Personal site powered by Astro and deployed on GitHub Pages."
+    />
+  </head>
+  <body>
+    <main>
+      <p>Hello.</p>
+      <h1>{pageTitle}</h1>
+      <p>Your Astro site is set up and ready for content.</p>
+    </main>
+  </body>
+</html>
+
+<style>
+  :root {
+    color-scheme: light;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f6f1e8;
+    color: #1f140f;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  main {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    gap: 0.75rem;
+    padding: 2rem;
+  }
+
+  h1,
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    line-height: 0.95;
+  }
+
+  p:first-child {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.75rem;
+  }
+
+  p:last-child {
+    max-width: 32rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+</style>
